@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:xlo_app/app/core/app_colors.dart';
+import 'package:xlo_app/app/shared/core/app_colors.dart';
 
 class ItemDrawerWiget extends StatelessWidget {
   final String label;

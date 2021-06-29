@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:xlo_app/app/core/app_theme.dart';
+import 'package:xlo_app/app/screens/auth/login/login_screen.dart';
+import 'package:xlo_app/app/shared/core/app_theme.dart';
 import 'package:xlo_app/app/screens/navigation/navigation_screen.dart';
 
 class AppWidget extends StatelessWidget {
@@ -12,6 +13,9 @@ class AppWidget extends StatelessWidget {
       theme: AppTheme.theme,
       debugShowCheckedModeBanner: false,
       home: NavigationScreen(),
+      routes: {
+        "/login": (context) => LoginScreen(),
+      },
     );
   }
 }
