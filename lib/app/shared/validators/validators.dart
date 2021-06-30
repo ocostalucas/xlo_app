@@ -1,4 +1,10 @@
 class Validators {
+  static String? validateRequiredField(String? value, String name) {
+    return value == null || value.isEmpty
+        ? "O campo $name é obrigatório."
+        : null;
+  }
+
   static String? validatePhone(String? value) {
     String pattern = r'^(\(\d{2}\)\s)(\d{4,5}\-\d{4})';
     RegExp regExp = new RegExp(pattern);
