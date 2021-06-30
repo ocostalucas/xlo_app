@@ -6,6 +6,9 @@ import 'app_typography.dart';
 class AppTheme {
   static ThemeData get theme => ThemeData(
         primaryColor: AppColors.primary,
+        textSelectionTheme: TextSelectionThemeData(
+          cursorColor: AppColors.primary,
+        ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
         inputDecorationTheme: inputDecorationTheme,
       );

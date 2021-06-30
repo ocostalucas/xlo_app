@@ -1,7 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:xlo_app/app/shared/components/buttons/button_widget.dart';
-import 'package:xlo_app/app/shared/components/buttons/outlined_button_widget.dart';
 import 'package:xlo_app/app/shared/components/fields/text_field_widget.dart';
 import 'package:xlo_app/app/shared/core/app_colors.dart';
 import 'package:xlo_app/app/shared/core/app_typography.dart';
@@ -76,7 +75,8 @@ class LoginScreen extends StatelessWidget {
                       style: AppTypography.bodyBold.copyWith(
                         color: AppColors.blue,
                       ),
-                      recognizer: TapGestureRecognizer()..onTap = () {},
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () => Navigator.pushNamed(context, "/signup"),
                     ),
                   ],
                 ),

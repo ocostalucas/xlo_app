@@ -27,7 +27,8 @@ dependencies:
   flutter_mobx: ^2.0.0
   mobx: ^2.0.1
   get_it: ^7.1.4
-
+  easy_mask: ^2.0.0
+  
 dev_dependencies:
   build_runner: ^2.0.5
   mobx_codegen: ^2.0.1+3
